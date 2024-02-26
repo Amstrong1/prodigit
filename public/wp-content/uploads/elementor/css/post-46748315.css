@@ -1,0 +1,45 @@
+.elementor-4674 .elementor-element.elementor-element-12eda24c:not(.elementor-motion-effects-element-type-background), .elementor-4674 .elementor-element.elementor-element-12eda24c > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#252742;}.elementor-4674 .elementor-element.elementor-element-12eda24c{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;margin-top:0px;margin-bottom:0px;padding:080px 0px 50px 0px;z-index:1;}.elementor-4674 .elementor-element.elementor-element-12eda24c > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-4674 .elementor-element.elementor-element-1340b462 img{transition-duration:0.3s;}.elementor-4674 .elementor-element.elementor-element-1340b462{width:auto;max-width:auto;top:-59.768vw;z-index:0;}body:not(.rtl) .elementor-4674 .elementor-element.elementor-element-1340b462{left:-55.691vw;}body.rtl .elementor-4674 .elementor-element.elementor-element-1340b462{right:-55.691vw;}.elementor-4674 .elementor-element.elementor-element-71279e5c{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;margin-top:0px;margin-bottom:0px;}.elementor-4674 .elementor-element.elementor-element-71279e5c > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-4674 .elementor-element.elementor-element-c6ee4de{--spacer-size:30px;}.elementor-4674 .elementor-element.elementor-element-840cdc9{text-align:center;}.elementor-4674 .elementor-element.elementor-element-840cdc9 .elementor-heading-title{color:#9E43FF;font-family:"Zilla Slab", Sans-serif;font-size:48px;font-weight:500;line-height:60px;}.elementor-4674 .elementor-element.elementor-element-840cdc9 > .elementor-widget-container{margin:0px 0px 5px 0px;}.elementor-4674 .elementor-element.elementor-element-3bb4444a{width:auto;max-width:auto;top:-5vw;}body:not(.rtl) .elementor-4674 .elementor-element.elementor-element-3bb4444a{right:-15vw;}body.rtl .elementor-4674 .elementor-element.elementor-element-3bb4444a{left:-15vw;}.elementor-4674 .elementor-element.elementor-element-854390b{width:auto;max-width:auto;top:2vw;}body:not(.rtl) .elementor-4674 .elementor-element.elementor-element-854390b{right:-8vw;}body.rtl .elementor-4674 .elementor-element.elementor-element-854390b{left:-8vw;}.elementor-4674 .elementor-element.elementor-element-f238cad{--spacer-size:150px;}@media(min-width:768px){.elementor-4674 .elementor-element.elementor-element-2cd9f494{width:10%;}.elementor-4674 .elementor-element.elementor-element-4d2f9b6{width:79.298%;}.elementor-4674 .elementor-element.elementor-element-2247eeea{width:10.034%;}}@media(max-width:1024px){.elementor-4674 .elementor-element.elementor-element-12eda24c{padding:40px 0px 40px 0px;}}@media(max-width:767px){.elementor-4674 .elementor-element.elementor-element-12eda24c{padding:0px 0px 0px 0px;}.elementor-4674 .elementor-element.elementor-element-71279e5c{margin-top:0px;margin-bottom:20px;}.elementor-4674 .elementor-element.elementor-element-840cdc9{text-align:center;}.elementor-4674 .elementor-element.elementor-element-840cdc9 .elementor-heading-title{font-size:28px;line-height:30px;}}/* Start custom CSS for spacer, class: .elementor-element-c6ee4de *//*Job Manager*/
+
+
+
+.job_manager .job_listings{
+	background-color: white;
+	border: 0 !important;
+	border-radius: 20px;
+}
+
+.job_manager h5{
+	font-weight: bold;
+	color: white;
+	font-size: 40px;
+} 
+
+.job_manager h3{
+		font-weight: bold;
+	text-transform: uppercase;
+	font-size: 20px !important;
+} 
+
+.job_listings .location{
+	display: none !important;
+}
+
+.wp-widget-widget_recent_jobs.default{
+	border: 0;
+}
+
+.rp4wp-related-job_listing > ul li.job_listing, .rp4wp-related-job_listing > ul li.no_job_listings_found, ul.job_listings li.job_listing, ul.job_listings li.no_job_listings_found{
+	border: 0;
+}
+
+/*Fin Job Manager*//* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-3bb4444a */.elementor-4674 .elementor-element.elementor-element-3bb4444a .elementor-widget-container {
+    animation: scaleup 5s linear infinite;
+}/* End custom CSS */
+/* Start custom CSS for image, class: .elementor-element-854390b */.elementor-4674 .elementor-element.elementor-element-854390b .elementor-widget-container {
+    animation: rotate 25s linear infinite;
+    transform-origin: 0 50% 50%
+}/* End custom CSS */
+/* Start custom CSS for column, class: .elementor-element-298fe0ab */.p-0 > .elementor-element-populated {
+    padding: 0px!important;
+}/* End custom CSS */
