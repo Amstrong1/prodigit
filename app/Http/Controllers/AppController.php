@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\ContactForm;
+use App\Mail\ProjectMail;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -61,34 +62,34 @@ class AppController extends Controller
         }
 
         $data = [
-            'name' => $request->input('name'),
-            'firstname' => $request->input('firstname'),
+            'nom' => $request->input('name'),
+            'prenom' => $request->input('firstname'),
             'tel' => $request->input('tel'),
             'email' => $request->input('email'),
-            'company' => $request->input('company'),
+            'entreprise' => $request->input('company'),
             'siret' => $request->input('siret'),
-            'project_name' => $request->input('project_name'),
+            'projet' => $request->input('project_name'),
             'service' => $request->input('service'),
             'description' => $request->input('description'),
             'paiement' => $request->input('paiement'),
             'delai' => $request->input('delai'),
-            'hoster' => $request->input('hoster'),
-            'domain' => $request->input('domain'),
+            'hebergeur' => $request->input('hoster'),
+            'domaine' => $request->input('domain'),
             'parrain' => $request->input('parrain'),
         ];
 
         $attachmentPaths = [];
-        if (!empty($request->file('attachment')) && $request->file('attachment')->isValid()) {
+        if (!empty($request->file('attachment'))) {
             foreach ($request->file('attachment') as $attachmentFile) {
                 $fileName = time() . '-' . str::random(10) . '.' . $attachmentFile->getClientOriginalExtension();
-                $attachmentPaths[] = $attachmentFile->storeAs('attachments', $fileName);
+                $attachmentPaths[] = $attachmentFile->storeAs('attachments', $fileName, 'public');
             }
         }
 
-        if ($attachmentPaths !== []) {
-            Mail::to('admin@test.com')->send(new ContactForm($data, $attachmentPaths));
+        if (!empty($attachmentPaths)) {
+            Mail::to('admin@test.com')->send(new ProjectMail($data, $attachmentPaths));
         } else {
-            Mail::to('admin@test.com')->send(new ContactForm($data));
+            Mail::to('admin@test.com')->send(new ProjectMail($data));
         }
 
         return redirect()->back()->with('success', 'Your message has been sent successfully!');

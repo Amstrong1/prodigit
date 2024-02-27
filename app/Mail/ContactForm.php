@@ -13,30 +13,43 @@ class ContactForm extends Mailable
 {
     use Queueable, SerializesModels;
 
-    protected $data;
-    protected array $attachments = [];
+    public $data;
 
-    public function __construct(array $data, array $attachments = [])
+    /**
+     * Create a new message instance.
+     */
+    public function __construct($data)
     {
         $this->data = $data;
-        $this->attachments = $attachments;
     }
 
-    public function build()
+    /**
+     * Get the message envelope.
+     */
+    public function envelope(): Envelope
     {
-        $this->subject('New contact form submission');
+        return new Envelope(
+            subject: $this->data['service'],
+        );
+    }
 
-        if (!empty($this->attachments)) {
-            foreach ($this->attachments as $attachment) {
-                $this->attach($attachment['path'], [
-                    'as'       => basename($attachment['path']),
-                    'mime'     => mime_content_type($attachment['path']),
-                ]);
-            }
-        }
+    /**
+     * Get the message content definition.
+     */
+    public function content(): Content
+    {
+        return new Content(
+            view: 'email',
+        );
+    }
 
-        return $this->view('email')->with([
-            $this->data['name']
-        ]);
+    /**
+     * Get the attachments for the message.
+     *
+     * @return array<int, \Illuminate\Mail\Mailables\Attachment>
+     */
+    public function attachments(): array
+    {
+        return [];
     }
 }

@@ -1717,7 +1717,8 @@ opacity: 0;
                                         content: "" !important
                                     }
                                 </style>
-                                <form action="/projet" method="post" name="Client">
+                                <form action="/mon-projet" method="post" name="Client" enctype="multipart/form-data">
+                                    @csrf
                                     <div class="elementor-form-fields-wrapper elementor-labels-above">
                                         <div
                                             class="elementor-field-type-step elementor-field-group elementor-column elementor-field-group-field_54891a1 elementor-col-100">
