@@ -516,7 +516,7 @@
                                         data-id="1ec97205" data-element_type="widget"
                                         data-widget_type="text-editor.default">
                                         <div class="elementor-widget-container">
-                                            <p>PRODIGIT SERVICES © One For All | 2019 &#8211; 2023.</p>
+                                            <p>PRODIGIT SERVICES © | 2019 &#8211; 2024.</p>
                                         </div>
                                     </div>
                                 </div>
