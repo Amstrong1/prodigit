@@ -80,7 +80,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="elementor-element elementor-element-09e43d4 elementor-mobile-align-center elementor-align-center elementor-invisible elementor-widget elementor-widget-button"
+                                    {{-- <div class="elementor-element elementor-element-09e43d4 elementor-mobile-align-center elementor-align-center elementor-invisible elementor-widget elementor-widget-button"
                                         data-id="09e43d4" data-element_type="widget"
                                         data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
                                         data-widget_type="button.default">
@@ -94,7 +94,7 @@
                                                         <span class="elementor-button-text">Dévenir
                                                             Partenaire</span> </span> </a></div>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div class="elementor-element elementor-element-dd8e1fd elementor-hidden-tablet elementor-widget elementor-widget-heading"
                                         data-id="dd8e1fd" data-element_type="widget" data-widget_type="heading.default">
                                         <div class="elementor-widget-container">
@@ -454,7 +454,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="elementor-element elementor-element-d621152 elementor-widget elementor-widget-text-editor"
+                                    {{-- <div class="elementor-element elementor-element-d621152 elementor-widget elementor-widget-text-editor"
                                         data-id="d621152" data-element_type="widget"
                                         data-widget_type="text-editor.default">
                                         <div class="elementor-widget-container">
@@ -465,7 +465,7 @@
                                                         alt="Google Avis - PRODIGIT SERVICES" width="199"
                                                         height="82" /></a></p>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                             <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-3fdf1e6e"
@@ -855,7 +855,7 @@
                                                     border-radius: 50%
                                                 }
                                             </style>
-                                            <div class="elementor-social-icons-wrapper elementor-grid"> <span
+                                            {{-- <div class="elementor-social-icons-wrapper elementor-grid"> <span
                                                     class="elementor-grid-item">
                                                     <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook-square elementor-repeater-item-a7b433b"
                                                         href="https://www.facebook.com/OFAWeb/" target="_blank"> <span
@@ -894,7 +894,7 @@
                                                         target="_blank"> <span
                                                             class="elementor-screen-only">Youtube</span> <i
                                                             class="fab fa-youtube"></i> </a> </span>
-                                            </div>
+                                            </div> --}}
                                         </div>
                                     </div>
                                 </div>
